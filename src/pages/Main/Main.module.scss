@@ -1,0 +1,38 @@
+.main {
+  min-height: 100vh;
+
+  display: flex;
+  column-gap: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.socials {
+  font-weight: 800;
+  text-align: center;
+}
+
+@keyframes gradient_move {
+  0% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.folder {
+  margin-top: 50px;
+  color: #fff;
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  &:hover {
+    rotate: -10deg;
+  }
+
+  img {
+    width: 82px;
+    pointer-events: none;
+  }
+}

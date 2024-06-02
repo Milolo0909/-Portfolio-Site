@@ -1,0 +1,47 @@
+@import "./libs/normalize";
+
+body {
+    background-color: #000;
+    background-image: radial-gradient(rgb(57, 0, 127) 15%, transparent 0);
+    background-size: 25px 25px;
+    background-position: 0 0, 5px 5px;
+}
+
+.animated_text {
+    background: linear-gradient(
+        to right,
+        rgb(0, 255, 17),
+        rgb(0, 155, 10),
+        rgb(0, 112, 7),
+        rgb(0, 155, 10),
+        rgb(0, 255, 17)
+    );
+    background-size: 50% 50%;
+    background-clip: text;
+    color: transparent;
+    animation: gradient_move 1.5s linear infinite;
+}
+
+a {
+    background: linear-gradient(
+        to right,
+        rgb(38, 0, 255),
+        rgb(29, 0, 196),
+        rgb(24, 0, 158),
+        rgb(29, 0, 196),
+        rgb(38, 0, 255)
+    );
+    background-size: 50% 50%;
+    background-clip: text;
+    color: transparent;
+    animation: gradient_move 1.5s linear infinite;
+}
+
+@keyframes gradient_move {
+    0% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}

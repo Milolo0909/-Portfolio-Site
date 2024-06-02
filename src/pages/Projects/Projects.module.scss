@@ -1,0 +1,23 @@
+.projects {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.folder {
+  margin-top: 50px;
+  color: #fff;
+  transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+
+  &:hover {
+    rotate: -10deg;
+  }
+
+  img {
+    width: 82px;
+    pointer-events: none;
+  }
+}
